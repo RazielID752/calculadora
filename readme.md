@@ -32,7 +32,7 @@ Este é um projeto de uma **calculadora simples** desenvolvida utilizando **HTML
 
 ## Imagem da Interface
 
-![Calculadora 2.0](./imagens/calculadora.png)
+![Calculadora 2.0](./img/calculadora.png)
 
 ## Estrutura do Projeto
 
