@@ -1,3 +1,8 @@
+window.onload = function() {
+    // Defina o valor inicial de 'resultado' como '0' quando a página carregar
+    document.getElementById("resultado").innerHTML = "0";
+  };
+
 function ajustarTamanhoFonte() {
     const resultado = document.getElementById("resultado");
     const comprimento = resultado.innerHTML.length;
