@@ -1,0 +1,98 @@
+:root {
+  --radius: 90px;
+  --gray:#5c5c5f;
+  --gray-white: #76767a;
+  --gray-black-scale: #424246;
+  --gray-black: #2a2a2c;
+  --orange-color: #ff9f09;
+  --orange-white-color: #ffbb4e;
+  --color-white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--color-white);
+  background-color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.calc {
+  height: 100vh;
+}
+
+.calc-wrapper {
+  position: absolute;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 3px;
+  background-color: var(--gray-black);
+  border-radius: var(--radius);
+  border: none;
+  color: var(--color-white);
+}
+
+.btn-ext {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 3px;
+  background-color: var(--orange-color);
+  border-radius: var(--radius);
+  border: none;
+  color: var(--color-white);
+}
+
+.btn-ext:hover {
+  background-color: var(--orange-white-color);
+}
+
+.btn-other {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 3px;
+  background-color: var(--gray);
+  border-radius: var(--radius);
+  border: none;
+  color: var(--color-white);
+}
+
+.btn-other:hover {
+  background-color: var(--gray-white);
+}
+
+.btn:hover {
+  background-color: var(--gray-black-scale);
+}
+
+#resultado {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: var(--radius);
+  width: 207px;
+  height: 80px;
+  margin: 5px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  padding: 5px;
+}
