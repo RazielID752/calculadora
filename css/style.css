@@ -92,6 +92,10 @@ body {
   height: 80px;
   margin: 5px;
   font-size: 28px;
+  overflow: hidden;          /* Esconde qualquer conteúdo que ultrapasse */
+  white-space: nowrap;       /* Impede a quebra de linha */
+  text-overflow: ellipsis;   /* Exibe '...' quando o texto for muito longo */
+  word-wrap: break-word;     /* Permite quebrar palavras longas, se necessário */
   color: rgb(255, 255, 255);
   text-align: right;
   padding: 5px;
