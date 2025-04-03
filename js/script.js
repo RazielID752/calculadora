@@ -48,15 +48,24 @@ function ajustarTamanhoFonte() {
     ajustarTamanhoFonte(); // Ajusta o tamanho da fonte ao apagar
   }
   
-  function calcular() {
+  const calcular = () => {
     const resultado = document.getElementById("resultado");
-    
-    if (resultado && resultado.innerHTML !== "0") {
-      resultado.innerHTML = eval(resultado.innerHTML);
-    } else {
+    if (!resultado || resultado.innerHTML.trim() === "") {
       resultado.innerHTML = "Nada...";
+      return;
     }
   
-    ajustarTamanhoFonte(); // Ajusta o tamanho da fonte ao calcular
-  }
+    try {
+      const expressao = resultado.innerHTML;
+      if (/\b\/\s*0\b/.test(expressao)) {
+        resultado.innerHTML = "Indefinido!";
+        return;
+      }
+      resultado.innerHTML = eval(expressao);
+    } catch (erro) {
+        resultado.innerHTML = "Indefinido!";
+    }
+  
+    ajustarTamanhoFonte(); // Ajusta o tamnho da fonte ao calcular
+  };
   
